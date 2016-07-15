@@ -1,0 +1,1960 @@
+﻿Build started 26/05/2010 8:20:02.
+     1>Project "I:\Visual Studio 2010\Projects\ahttp\ahttplib\ahttplib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\ahttplib.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"I:\Visual Studio 2010\Projects\ahttp\ahttplib\\" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt aconnect\aconnect.cpp aconnect\error.cpp aconnect\logger.cpp aconnect\util.cpp ahttp\http_request.cpp ahttp\http_response.cpp ahttp\http_response_header.cpp ahttp\http_server.cpp ahttp\http_server_settings.cpp ahttp\http_support.cpp
+         http_support.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         http_server_settings.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(110): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(96) : while compiling class template member function 'std::fpos<_Statetype> boost::io::basic_altstringbuf<Ch,Tr,Alloc>::seekoff(__int64,std::ios_base::seekdir,std::ios_base::openmode)'
+                 with
+                 [
+                     _Statetype=_Mbstatet,
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\format_class.hpp(136) : see reference to class template instantiation 'boost::io::basic_altstringbuf<Ch,Tr,Alloc>' being compiled
+                 with
+                 [
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server_settings.cpp(103) : see reference to class template instantiation 'boost::basic_format<Ch>' being compiled
+                 with
+                 [
+                     Ch=char
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(128): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,Range2T,boost::algorithm::is_equal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\network.hpp(157) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,std::string>(const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(147): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(148): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(248): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\replace.hpp(656) : see reference to function template instantiation 'void boost::algorithm::find_format_all<SequenceT,boost::algorithm::detail::first_finderF<SearchIteratorT,PredicateT>,boost::algorithm::detail::const_formatF<RangeT>>(SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     SearchIteratorT=const aconnect::char_type *,
+                     PredicateT=boost::algorithm::is_equal,
+                     RangeT=const char [2],
+                     FinderT=boost::algorithm::detail::first_finderF<const aconnect::char_type *,boost::algorithm::is_equal>,
+                     FormatterT=boost::algorithm::detail::const_formatF<const char [2]>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server_settings.cpp(561) : see reference to function template instantiation 'void boost::algorithm::replace_all<std::string,const aconnect::char_type[6],const char[2]>(SequenceT &,Range1T (&),Range2T (&))' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     Range1T=const aconnect::char_type [6],
+                     Range2T=const char [2]
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(248): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(136): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\replace.hpp(181) : see reference to function template instantiation 'void boost::algorithm::find_format<SequenceT,boost::algorithm::detail::first_finderF<SearchIteratorT,PredicateT>,boost::algorithm::detail::const_formatF<RangeT>>(SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     SearchIteratorT=const aconnect::char_type *,
+                     PredicateT=boost::algorithm::is_equal,
+                     RangeT=std::string,
+                     FinderT=boost::algorithm::detail::first_finderF<const aconnect::char_type *,boost::algorithm::is_equal>,
+                     FormatterT=boost::algorithm::detail::const_formatF<std::string>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server_settings.cpp(610) : see reference to function template instantiation 'void boost::algorithm::replace_first<std::string,const aconnect::char_type[11],std::string>(SequenceT &,Range1T (&),const Range2T &)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     Range1T=const aconnect::char_type [11],
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(136): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+         http_server.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(1071): warning C4244: 'initializing' : conversion from 'const std::streamsize' to 'unsigned int', possible loss of data
+     1>i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(1074): warning C4244: 'argument' : conversion from 'std::streamsize' to 'size_t', possible loss of data
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(110): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(96) : while compiling class template member function 'std::fpos<_Statetype> boost::io::basic_altstringbuf<Ch,Tr,Alloc>::seekoff(__int64,std::ios_base::seekdir,std::ios_base::openmode)'
+                 with
+                 [
+                     _Statetype=_Mbstatet,
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\format_class.hpp(136) : see reference to class template instantiation 'boost::io::basic_altstringbuf<Ch,Tr,Alloc>' being compiled
+                 with
+                 [
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(605) : see reference to class template instantiation 'boost::basic_format<Ch>' being compiled
+                 with
+                 [
+                     Ch=char
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(128): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,Range2T,boost::algorithm::is_equal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\network.hpp(157) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,std::string>(const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(147): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(148): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(154): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\split.hpp(148) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::iter_split<SequenceSequenceT,RangeT,boost::algorithm::detail::token_finderF<PredicateT>>(SequenceSequenceT &,RangeT &,FinderT)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     RangeT=const std::string,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>,
+                     FinderT=boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char>>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(66) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::split<aconnect::str_vector,const std::string,boost::algorithm::detail::is_any_ofF<CharT>>(SequenceSequenceT &,RangeT &,PredicateT,boost::algorithm::token_compress_mode_type)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     CharT=char,
+                     RangeT=const std::string,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2661: 'boost::algorithm::split_iterator<IteratorT>::split_iterator' : no overloaded function takes 3 arguments
+                 with
+                 [
+                     IteratorT=input_iterator_type
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(162): error C2780: 'iterators::enable_if<boost::is_class<T>,boost::transform_iterator<UnaryFunction,Iterator>>::type boost::make_transform_iterator(Iterator)' : expects 1 arguments - 2 provided
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\iterator\transform_iterator.hpp(170) : see declaration of 'boost::make_transform_iterator'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(306): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(336) : see reference to function template instantiation 'SequenceT boost::algorithm::trim_copy_if<SequenceT,boost::algorithm::detail::is_classifiedF>(const SequenceT &,PredicateT)' being compiled
+                 with
+                 [
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     PredicateT=boost::algorithm::detail::is_classifiedF
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(80) : see reference to function template instantiation 'SequenceT boost::algorithm::trim_copy<std::basic_string<_Elem,_Traits,_Ax>>(const SequenceT &,const std::locale &)' being compiled
+                 with
+                 [
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(307): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(312): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(64): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(89) : see reference to function template instantiation 'bool boost::algorithm::starts_with<Range1T,const aconnect::char_type[10],boost::algorithm::is_equal>(const Range1T &,Range2T (&),PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [10],
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(84) : see reference to function template instantiation 'bool boost::algorithm::starts_with<std::string,const aconnect::char_type[10]>(const Range1T &,Range2T (&))' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [10]
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(67): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(136): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\erase.hpp(739) : see reference to function template instantiation 'void boost::algorithm::find_format<SequenceT,boost::algorithm::detail::head_finderF,boost::algorithm::detail::empty_formatF<CharT>>(SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     CharT=char,
+                     FinderT=boost::algorithm::detail::head_finderF,
+                     FormatterT=boost::algorithm::detail::empty_formatF<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(167) : see reference to function template instantiation 'void boost::algorithm::erase_head<std::string>(SequenceT &,int)' being compiled
+                 with
+                 [
+                     SequenceT=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(136): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(154): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\split.hpp(148) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::iter_split<SequenceSequenceT,RangeT,boost::algorithm::detail::token_finderF<PredicateT>>(SequenceSequenceT &,RangeT &,FinderT)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     RangeT=std::string,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>,
+                     FinderT=boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char>>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(221) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::split<aconnect::str_vector,std::string,boost::algorithm::detail::is_any_ofF<CharT>>(SequenceSequenceT &,RangeT &,PredicateT,boost::algorithm::token_compress_mode_type)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     CharT=char,
+                     RangeT=std::string,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2661: 'boost::algorithm::split_iterator<IteratorT>::split_iterator' : no overloaded function takes 3 arguments
+                 with
+                 [
+                     IteratorT=input_iterator_type
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(162): error C2780: 'iterators::enable_if<boost::is_class<T>,boost::transform_iterator<UnaryFunction,Iterator>>::type boost::make_transform_iterator(Iterator)' : expects 1 arguments - 2 provided
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\iterator\transform_iterator.hpp(170) : see declaration of 'boost::make_transform_iterator'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(64): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(111) : see reference to function template instantiation 'bool boost::algorithm::starts_with<Range1T,const aconnect::char_type[20],boost::algorithm::is_iequal>(const Range1T &,Range2T (&),PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [20],
+                     PredicateT=boost::algorithm::is_iequal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(260) : see reference to function template instantiation 'bool boost::algorithm::istarts_with<std::string,const aconnect::char_type[20]>(const Range1T &,Range2T (&),const std::locale &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [20]
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(67): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(248): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\replace.hpp(656) : see reference to function template instantiation 'void boost::algorithm::find_format_all<SequenceT,boost::algorithm::detail::first_finderF<SearchIteratorT,PredicateT>,boost::algorithm::detail::const_formatF<RangeT>>(SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     SearchIteratorT=std::_String_const_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     PredicateT=boost::algorithm::is_equal,
+                     RangeT=std::string,
+                     FinderT=boost::algorithm::detail::first_finderF<std::_String_const_iterator<char,std::char_traits<char>,std::allocator<char>>,boost::algorithm::is_equal>,
+                     FormatterT=boost::algorithm::detail::const_formatF<std::string>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(781) : see reference to function template instantiation 'void boost::algorithm::replace_all<std::string,std::basic_string<_Elem,_Traits,_Ax>,std::string>(SequenceT &,const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>,
+                     SequenceT=std::string,
+                     Range1T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(248): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,const aconnect::char_type[2],boost::algorithm::is_equal>(const Range1T &,Range2T (&),PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [2],
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(809) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,const aconnect::char_type[2]>(const Range1T &,Range2T (&))' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [2]
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(216): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(229) : see reference to function template instantiation 'bool boost::algorithm::contains<Range1T,const aconnect::char_type[2],boost::algorithm::is_equal>(const Range1T &,Range2T (&),PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [2],
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(921) : see reference to function template instantiation 'bool boost::algorithm::contains<std::string,const aconnect::char_type[2]>(const Range1T &,Range2T (&))' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=const aconnect::char_type [2]
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(216): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(216): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(250) : see reference to function template instantiation 'bool boost::algorithm::contains<Range1T,Range2T,boost::algorithm::is_iequal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_iequal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(922) : see reference to function template instantiation 'bool boost::algorithm::icontains<std::string,std::string>(const Range1T &,const Range2T &,const std::locale &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(216): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(283): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(331) : see reference to function template instantiation 'bool boost::algorithm::equals<const aconnect::char_type[11],Range2T,boost::algorithm::is_iequal>(Range1T (&),const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range2T=std::string,
+                     Range1T=const aconnect::char_type [11],
+                     PredicateT=boost::algorithm::is_iequal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(923) : see reference to function template instantiation 'bool boost::algorithm::iequals<const aconnect::char_type[11],std::string>(Range1T (&),const Range2T &,const std::locale &)' being compiled
+                 with
+                 [
+                     Range1T=const aconnect::char_type [11],
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(286): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(213): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\replace.hpp(634) : see reference to function template instantiation 'SequenceT boost::algorithm::find_format_all_copy<SequenceT,boost::algorithm::detail::first_finderF<SearchIteratorT,PredicateT>,boost::algorithm::detail::const_formatF<RangeT>>(const SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     SearchIteratorT=const aconnect::char_type *,
+                     PredicateT=boost::algorithm::is_equal,
+                     RangeT=std::string,
+                     FinderT=boost::algorithm::detail::first_finderF<const aconnect::char_type *,boost::algorithm::is_equal>,
+                     FormatterT=boost::algorithm::detail::const_formatF<std::string>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(1085) : see reference to function template instantiation 'SequenceT boost::algorithm::replace_all_copy<std::string,const aconnect::char_type[11],std::string>(const SequenceT &,Range1T (&),const Range2T &)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     Range1T=const aconnect::char_type [11],
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(213): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(213): error C2780: 'OutputIteratorT boost::algorithm::detail::find_format_all_copy_impl(OutputIteratorT,const InputT &,FinderT,FormatterT,const FindResultT &)' : expects 5 arguments - 4 provided
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\detail\find_format_all.hpp(32) : see declaration of 'boost::algorithm::detail::find_format_all_copy_impl'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(248): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\replace.hpp(656) : see reference to function template instantiation 'void boost::algorithm::find_format_all<SequenceT,boost::algorithm::detail::first_finderF<SearchIteratorT,PredicateT>,boost::algorithm::detail::const_formatF<RangeT>>(SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     SearchIteratorT=const aconnect::char_type *,
+                     PredicateT=boost::algorithm::is_equal,
+                     RangeT=std::string,
+                     FinderT=boost::algorithm::detail::first_finderF<const aconnect::char_type *,boost::algorithm::is_equal>,
+                     FormatterT=boost::algorithm::detail::const_formatF<std::string>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_server.cpp(1105) : see reference to function template instantiation 'void boost::algorithm::replace_all<std::string,const aconnect::char_type[7],std::string>(SequenceT &,Range1T (&),const Range2T &)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     Range1T=const aconnect::char_type [7],
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(248): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(std::string)'
+         http_response_header.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         http_response.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(110): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(96) : while compiling class template member function 'std::fpos<_Statetype> boost::io::basic_altstringbuf<Ch,Tr,Alloc>::seekoff(__int64,std::ios_base::seekdir,std::ios_base::openmode)'
+                 with
+                 [
+                     _Statetype=_Mbstatet,
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\format_class.hpp(136) : see reference to class template instantiation 'boost::io::basic_altstringbuf<Ch,Tr,Alloc>' being compiled
+                 with
+                 [
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_response.cpp(163) : see reference to class template instantiation 'boost::basic_format<Ch>' being compiled
+                 with
+                 [
+                     Ch=char
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(128): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,Range2T,boost::algorithm::is_equal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\network.hpp(157) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,std::string>(const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(147): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(148): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+         http_request.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,Range2T,boost::algorithm::is_equal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\network.hpp(157) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,std::string>(const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(147): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(148): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(154): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\split.hpp(148) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::iter_split<SequenceSequenceT,RangeT,boost::algorithm::detail::token_finderF<PredicateT>>(SequenceSequenceT &,RangeT &,FinderT)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     RangeT=const std::string,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>,
+                     FinderT=boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char>>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_request.cpp(60) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::split<aconnect::str_vector,const std::string,boost::algorithm::detail::is_any_ofF<CharT>>(SequenceSequenceT &,RangeT &,PredicateT,boost::algorithm::token_compress_mode_type)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     CharT=char,
+                     RangeT=const std::string,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2661: 'boost::algorithm::split_iterator<IteratorT>::split_iterator' : no overloaded function takes 3 arguments
+                 with
+                 [
+                     IteratorT=input_iterator_type
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(162): error C2780: 'iterators::enable_if<boost::is_class<T>,boost::transform_iterator<UnaryFunction,Iterator>>::type boost::make_transform_iterator(Iterator)' : expects 1 arguments - 2 provided
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\iterator\transform_iterator.hpp(170) : see declaration of 'boost::make_transform_iterator'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(154): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(145): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::end<RangeT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     RangeT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(982): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::end<RangeT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     RangeT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Container=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 while trying to match the argument list '(std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\split.hpp(148) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::iter_split<SequenceSequenceT,RangeT,boost::algorithm::detail::token_finderF<PredicateT>>(SequenceSequenceT &,RangeT &,FinderT)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     RangeT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     PredicateT=boost::algorithm::detail::is_classifiedF,
+                     FinderT=boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_classifiedF>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_request.cpp(61) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::split<aconnect::str_vector,std::basic_string<_Elem,_Traits,_Ax>,boost::algorithm::detail::is_classifiedF>(SequenceSequenceT &,RangeT &,PredicateT,boost::algorithm::token_compress_mode_type)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=aconnect::str_vector,
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>,
+                     RangeT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     PredicateT=boost::algorithm::detail::is_classifiedF
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(146): could be 'std::_String_iterator<_Elem,_Traits,_Alloc> boost::begin<RangeT>(T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     RangeT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(970): or       'std::_String_iterator<_Elem,_Traits,_Alloc> std::begin<RangeT>(_Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     RangeT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Container=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 while trying to match the argument list '(std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(161): error C2661: 'boost::algorithm::split_iterator<IteratorT>::split_iterator' : no overloaded function takes 3 arguments
+                 with
+                 [
+                     IteratorT=input_iterator_type
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\iter_find.hpp(162): error C2780: 'iterators::enable_if<boost::is_class<T>,boost::transform_iterator<UnaryFunction,Iterator>>::type boost::make_transform_iterator(Iterator)' : expects 1 arguments - 2 provided
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\iterator\transform_iterator.hpp(170) : see declaration of 'boost::make_transform_iterator'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(306): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(336) : see reference to function template instantiation 'SequenceT boost::algorithm::trim_copy_if<SequenceT,boost::algorithm::detail::is_classifiedF>(const SequenceT &,PredicateT)' being compiled
+                 with
+                 [
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     PredicateT=boost::algorithm::detail::is_classifiedF
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\ahttp\http_request.cpp(87) : see reference to function template instantiation 'SequenceT boost::algorithm::trim_copy<std::basic_string<_Elem,_Traits,_Ax>>(const SequenceT &,const std::locale &)' being compiled
+                 with
+                 [
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(307): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(312): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+         util.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(306): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Container=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\util.cpp(398) : see reference to function template instantiation 'SequenceT boost::algorithm::trim_copy_if<std::basic_string<_Elem,_Traits,_Ax>,boost::algorithm::detail::is_any_ofF<CharT>>(const SequenceT &,PredicateT)' being compiled
+                 with
+                 [
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>,
+                     CharT=char,
+                     PredicateT=boost::algorithm::detail::is_any_ofF<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(307): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Container=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\trim.hpp(312): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     T=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+                     _Container=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+                 ]
+                 while trying to match the argument list '(const std::basic_string<_Elem,_Traits,_Ax>)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+         logger.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(110): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(96) : while compiling class template member function 'std::fpos<_Statetype> boost::io::basic_altstringbuf<Ch,Tr,Alloc>::seekoff(__int64,std::ios_base::seekdir,std::ios_base::openmode)'
+                 with
+                 [
+                     _Statetype=_Mbstatet,
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\format_class.hpp(136) : see reference to class template instantiation 'boost::io::basic_altstringbuf<Ch,Tr,Alloc>' being compiled
+                 with
+                 [
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\logger.cpp(57) : see reference to class template instantiation 'boost::basic_format<Ch>' being compiled
+                 with
+                 [
+                     Ch=char
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(128): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(213): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<SequenceT>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<SequenceT>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\replace.hpp(634) : see reference to function template instantiation 'SequenceT boost::algorithm::find_format_all_copy<SequenceT,boost::algorithm::detail::first_finderF<SearchIteratorT,PredicateT>,boost::algorithm::detail::const_formatF<RangeT>>(const SequenceT &,FinderT,FormatterT)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     SearchIteratorT=const aconnect::char_type *,
+                     PredicateT=boost::algorithm::is_equal,
+                     RangeT=std::string,
+                     FinderT=boost::algorithm::detail::first_finderF<const aconnect::char_type *,boost::algorithm::is_equal>,
+                     FormatterT=boost::algorithm::detail::const_formatF<std::string>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\logger.cpp(153) : see reference to function template instantiation 'SequenceT boost::algorithm::replace_all_copy<std::string,const aconnect::char_type[12],std::string>(const SequenceT &,Range1T (&),const Range2T &)' being compiled
+                 with
+                 [
+                     SequenceT=std::string,
+                     Range1T=const aconnect::char_type [12],
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(213): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<SequenceT>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<SequenceT>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     SequenceT=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\find_format.hpp(213): error C2780: 'OutputIteratorT boost::algorithm::detail::find_format_all_copy_impl(OutputIteratorT,const InputT &,FinderT,FormatterT,const FindResultT &)' : expects 5 arguments - 4 provided
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\detail\find_format_all.hpp(32) : see declaration of 'boost::algorithm::detail::find_format_all_copy_impl'
+         error.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(110): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(96) : while compiling class template member function 'std::fpos<_Statetype> boost::io::basic_altstringbuf<Ch,Tr,Alloc>::seekoff(__int64,std::ios_base::seekdir,std::ios_base::openmode)'
+                 with
+                 [
+                     _Statetype=_Mbstatet,
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\format\format_class.hpp(136) : see reference to class template instantiation 'boost::io::basic_altstringbuf<Ch,Tr,Alloc>' being compiled
+                 with
+                 [
+                     Ch=char,
+                     Tr=std::char_traits<char>,
+                     Alloc=std::allocator<char>
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\error.cpp(163) : see reference to class template instantiation 'boost::basic_format<Ch>' being compiled
+                 with
+                 [
+                     Ch=char
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\format\alt_sstream_impl.hpp(128): warning C4244: 'argument' : conversion from '__int64' to 'int', possible loss of data
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,Range2T,boost::algorithm::is_equal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\network.hpp(157) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,std::string>(const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(147): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(148): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+         aconnect.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(145): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(163) : see reference to function template instantiation 'bool boost::algorithm::ends_with<Range1T,Range2T,boost::algorithm::is_equal>(const Range1T &,const Range2T &,PredicateT)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string,
+                     PredicateT=boost::algorithm::is_equal
+                 ]
+                 i:\visual studio 2010\projects\ahttp\ahttplib\aconnect\network.hpp(157) : see reference to function template instantiation 'bool boost::algorithm::ends_with<std::string,std::string>(const Range1T &,const Range2T &)' being compiled
+                 with
+                 [
+                     Range1T=std::string,
+                     Range2T=std::string
+                 ]
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(146): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(147): error C2668: 'boost::begin' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\begin.hpp(157): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::begin<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(976): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::begin<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+     1>i:\visual studio 2010\projects\boost_1_34_1\boost\algorithm\string\predicate.hpp(148): error C2668: 'boost::end' : ambiguous call to overloaded function
+                 i:\visual studio 2010\projects\boost_1_34_1\boost\range\end.hpp(156): could be 'std::_String_const_iterator<_Elem,_Traits,_Alloc> boost::end<Range1T>(const T &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     T=std::string
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\xutility(988): or       'std::_String_const_iterator<_Elem,_Traits,_Alloc> std::end<Range1T>(const _Container &)' [found using argument-dependent lookup]
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>,
+                     Range1T=std::string,
+                     _Container=std::string
+                 ]
+                 while trying to match the argument list '(const std::string)'
+         Generating Code...
+     1>Done Building Project "I:\Visual Studio 2010\Projects\ahttp\ahttplib\ahttplib.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:01:17.92

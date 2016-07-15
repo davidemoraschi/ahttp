@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="aconnect">
+      <UniqueIdentifier>{7d6c683c-aec5-4bc0-ab00-9e2a6dff793e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aconnect\src">
+      <UniqueIdentifier>{6b1b8a00-bf90-4a22-b173-c2676500504b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ahttp">
+      <UniqueIdentifier>{aa36e4bb-d0f7-4d81-ac31-16341a046819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ahttp\src">
+      <UniqueIdentifier>{5c288182-db39-488c-94a5-033a7d444244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{684c2fd5-da60-41fb-af5f-0f33076c5178}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aconnect\aconnect.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\boost_format_safe.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\complex_types.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\error.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\logger.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\network.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\server_settings.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\time_util.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\types.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="aconnect\util.hpp">
+      <Filter>aconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_messages.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_request.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_response.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_response_header.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_server.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_server_settings.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttp\http_support.hpp">
+      <Filter>ahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="ahttplib.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aconnect\aconnect.cpp">
+      <Filter>aconnect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="aconnect\error.cpp">
+      <Filter>aconnect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="aconnect\logger.cpp">
+      <Filter>aconnect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="aconnect\util.cpp">
+      <Filter>aconnect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ahttp\http_request.cpp">
+      <Filter>ahttp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ahttp\http_response.cpp">
+      <Filter>ahttp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ahttp\http_response_header.cpp">
+      <Filter>ahttp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ahttp\http_server.cpp">
+      <Filter>ahttp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ahttp\http_server_settings.cpp">
+      <Filter>ahttp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ahttp\http_support.cpp">
+      <Filter>ahttp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ahttp\http_header_read_check.inl">
+      <Filter>ahttp\src</Filter>
+    </None>
+    <None Include="readme.txt" />
+  </ItemGroup>
+</Project>

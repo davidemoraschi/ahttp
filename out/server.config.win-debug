@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+
+	<!-- timeouts defined in seconds -->
+	<!-- 
+		Default values in code:
+		workers-count="500"
+		pooling-enabled="true"
+		worker-life-time="300"
+
+		keep-alive-timeout = "5"
+		server-socket-timeout = "900"
+		command-socket-timeout = "30" 
+		response-buffer-size = "2048576" bytes-->
+
+	<server
+		version = "ahttp 0.1"
+		port="5555"
+		workers-count="500"
+		pooling-enabled="true"
+		worker-life-time="60"
+		command-port="5556"
+		root="root"
+
+		keep-alive-enabled = "true"
+		keep-alive-timeout = "10"
+		server-socket-timeout = "900"
+		command-socket-timeout = "30"
+		response-buffer-size = "2048576"
+		max-chunk-size = "65535"
+
+		directory-config-file="directory.config"
+		>
+
+
+		<!-- log-level: "Debug", "Info", "Warning", "Error" - if none of them - then debug -->
+		<log log-level="debug" max-file-size="4194304">
+
+			<!-- {app-path} - path to directory where application is located (with trailing slash),
+				 {timestamp} - generated timestamp -->
+			<path>{app-path}log\server_{timestamp}.log</path>
+		</log>
+
+		<mime-types file="{app-path}mime-types.config" />
+
+		<handlers>
+			<handler name="python_handler" default-ext=".py">
+				<path>{app-path}python_handler-d.dll</path>
+				<parameter name="uploads-dir">c:\temp\python_handler\</parameter>
+			</handler>
+		</handlers>
+
+	</server>
+
+	<!-- virtual-path for root: "/"
+				charset - will be used when FS content is shown   -->
+	<directory name="root"
+		browsing-enabled="true"
+				charset="Windows-1251">
+
+		<path>d:\work\web\</path>
+
+		<default-documents>
+			<add>index.html</add>
+			<add>index.htm</add>
+			<add>main.html</add>
+		</default-documents>
+
+		<!-- ext="*" - will be applied to all requests -->
+		<!-- ext="." - will be applied to directory/file without extension -->
+		<handlers>
+			<register name="python_handler" />
+			<register name="python_handler" ext=".pyhtml"/>
+		</handlers>
+
+		<!-- Record attributes: 
+				{name} - name of item, 
+				{size} - size of item in kb,
+				{url} - url to open item
+				{time} - last modify dat/time of item,
+				{page-url} - url to current page
+				{parent-url} - url to parent directory
+				{files-count} - files count in current directory
+				{directories-count} - sub-directories count in current directory
+				{errors-count} - reading errors count 
+				{tab} - will be replaced with '\t'
+		-->
+		<header-template>
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt;Directory content: {page-url}&lt;/title&gt;
+			&lt;style&gt;
+			BODY { padding: 10px; margin: 10px; font: 10pt Tahoma, Arial; color: #000;}
+			H1 {font-size: 12pt; font-weight: bold; }
+			HR {height:1px; border: 1px solid #333; color: #333;}
+			TABLE {font-size: 100%;}
+			TD {padding: 1px 10px 0px 10px; text-align: left; }
+
+			&lt;/style&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;h1&gt;Directory: &lt;i&gt;{page-url}&lt;/i&gt;&lt;/h1&gt;
+			&lt;hr /&gt;
+			&lt;table border="0" cellpadding="0" cellspacing="0"&gt;
+		</header-template>
+
+		<parent-directory-template >
+			&lt;tr&gt;&lt;td colspan="4" style="padding-bottom: 10px;"&gt;&lt;a href="{parent-url}"&gt;[parent directory]&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+		</parent-directory-template>
+
+		<directory-template>
+			&lt;tr&gt;
+			&lt;td&gt;{time}&lt;/td&gt;
+			&lt;td&gt; &amp;lt;dir&amp;gt; &lt;/td&gt;
+			&lt;td&gt; &lt;img border="0" align="middle" src="/server_data/images/icon_dir.gif"/&gt; &lt;/td&gt;
+			&lt;td&gt; &lt;a href="{url}"&gt;  {name}&lt;/a&gt; &lt;/td&gt;
+			&lt;/tr&gt;
+		</directory-template>
+
+		<virtual-directory-template >
+			&lt;tr&gt;
+			&lt;td&gt;{time}&lt;/td&gt;
+			&lt;td&gt; &amp;lt;virtual&amp;gt; &lt;/td&gt;
+			&lt;td&gt; &lt;img border="0" align="middle" src="/server_data/images/icon_virtual_dir.gif"/&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;a href="{url}"&gt;{name}&lt;/a&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		</virtual-directory-template>
+
+		<file-template >
+			&lt;tr&gt;
+			&lt;td&gt;{time}&lt;/td&gt;
+			&lt;td&gt;{size}&lt;/td&gt;
+			&lt;td&gt; &lt;img border="0" align="middle" src="/server_data/images/icon_file.gif"/&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;a href="{url}"&gt;{name}&lt;/a&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		</file-template>
+
+		<footer-template>
+			&lt;/table&gt;
+			&lt;hr /&gt;
+			Files: {files-count}&lt;br&gt;
+			Directories: {directories-count}&lt;br&gt;
+			Reading errors: {errors-count}
+			&lt;hr /&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</footer-template>
+
+	</directory>
+
+	<directory name="server_data"
+			parent="root">
+		<virtual-path>server_data</virtual-path>
+		<path>{app-path}web</path>
+	</directory>
+
+	<directory name="disk_c"
+		parent="root">
+		<virtual-path>disk_c</virtual-path>
+		<path>c:\</path>
+	</directory>
+
+
+</settings>
